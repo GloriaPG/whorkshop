@@ -6,6 +6,7 @@ import com.security.UserRol
 class BootStrap {
 
     def init = { servletContext ->
+        // Creamos usuarios uno mortal y uno admin
         User admin= new User()
         admin.username="admin"
         admin.password="admin"
@@ -18,15 +19,17 @@ class BootStrap {
         mortal.email="gp@vincoorbis.com"
         mortal.save(flush:true, failOnError:true)
 
+        // Crear los roles, uno mortal y uno admin
         Rol rolMortal = new Rol(authority: "ROLE_MORTAL").save(flush: true, failOnError: true)
         Rol rolAdmin = new Rol(authority: "ROLE_ADMIN").save(flush: true, failOnError: true)
 
-        new UserRol(user: admin, role: rolAdmin).save(flush: true, failOnError: true)
-        new UserRol(user:mortal, role:rolMortal).save(flush: true, failOnError: true)
+        // Asociando usaurio con un rol
+        new UserRol(user: admin, rol: rolAdmin).save(flush: true, failOnError: true)
+        new UserRol(user:mortal, rol:rolMortal).save(flush: true, failOnError: true)
 
-
+        // Definición de la url a la que van a tener acceso los roles.
         new Requestmap(
-                configAttribute: 'ROLE_ADMIN',
+                configAttribute: 'ROLE_ADMIN', // Significa el rol
                 url: '/user/**'
         ).save(flush: true, failOnError: true)
 
