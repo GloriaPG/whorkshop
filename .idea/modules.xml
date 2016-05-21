@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/whorkshop.iml" filepath="$PROJECT_DIR$/.idea/modules/whorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/whorkshop_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/whorkshop_integrationTest.iml" group="whorkshop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/whorkshop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/whorkshop_main.iml" group="whorkshop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/whorkshop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/whorkshop_test.iml" group="whorkshop" />
+    </modules>
+  </component>
+</project>

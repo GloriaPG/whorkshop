@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.grails:grails-plugin-domain-class:3.1.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.1.6/c7116dba3c877c8f901ef0204179a3c492c6fda4/grails-plugin-domain-class-3.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.1.6/a921e840207801cfcd150b70a267d0920ca66118/grails-plugin-domain-class-3.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
